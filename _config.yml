@@ -1,0 +1,20 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Deversity
+tagline:          Development Services
+url:              http://deversity.uk
+baseurl:          /
+author:
+  name:           Oliver Pearmain
+  url:            http://oliverpearmain.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/Deversity/deversity.github.io
