@@ -8,11 +8,11 @@ permalink:        pretty
 # Setup
 title:            Deversity
 tagline:          Development Services
-url:              http://deversity.uk
+url:              http://www.deversity.uk
 baseurl:          /
 author:
   name:           Oliver Pearmain
-  url:            http://oliverpearmain.com
+  url:            http://www.oliverpearmain.com
 
 # Custom vars
 version:          1.0.0
