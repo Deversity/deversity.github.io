@@ -8,8 +8,8 @@ permalink:        pretty
 # Setup
 title:            Deversity
 tagline:          Development Services
-url:              http://www.deversity.uk
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://www.deversity.co.uk
+description:      ''
 baseurl:          /
 
 author:
@@ -28,7 +28,7 @@ github:
 
 
 
-# This below is required in order to support redirects (see the following URLs for details):
+# The below is required in order to support redirects (see the following URLs for details):
 #   https://help.github.com/articles/redirects-on-github-pages/
 #   https://help.github.com/articles/using-jekyll-plugins-with-github-pages/
 gems:
