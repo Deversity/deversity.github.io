@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style type="text/css">
+      body { color: white; background: black; font: xx-large Helvetica, serif; }
+      div { float: left; }
+      #regression { width: 200%; height: 20%; }
+      #netlify { float: right; }
+      .legend { font-weight: bold; }
+    </style>
+  </head>
+  <body>
+      <iframe src="//bamboo.hcom/agent/viewAgents.action?planKey=IOS-DEV-HOT"
+          id="netlify"
+          frameborder="0"
+          seamless="false"
+          height="100%"
+          width="35%"></iframe>
+      <iframe src="//bamboo.hcom/telemetry.action?filter=project&projectKey=IOS"
+          id="jira"
+          frameborder="0"
+          seamless="true"
+          height="50%"
+          width="65%"></iframe>
+      <iframe src="//bamboo.hcom/currentActivity.action"
+          id="bamboo"
+          frameborder="0"
+          seamless="true"
+          height="50%"
+          width="65%"></iframe>
+  </body>
+</html>
