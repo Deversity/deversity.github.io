@@ -1,31 +1,54 @@
 <html>
-  <head>
-    <style type="text/css">
-      body { color: white; background: black; font: xx-large Helvetica, serif; }
-      div { float: left; }
-      #regression { width: 200%; height: 20%; }
-      #netlify { float: right; }
-      .legend { font-weight: bold; }
-    </style>
-  </head>
-  <body>
-      <iframe src="//bamboo.hcom/agent/viewAgents.action?planKey=IOS-DEV-JOB1"
-          id="netlify"
-          frameborder="0"
-          seamless="false"
-          height="100%"
-          width="35%"></iframe>
-      <iframe src="//bamboo.hcom/telemetry.action?filter=project&projectKey=IOS"
-          id="jira"
-          frameborder="0"
-          seamless="true"
-          height="50%"
-          width="65%"></iframe>
-      <iframe src="//bamboo.hcom/currentActivity.action"
-          id="bamboo"
-          frameborder="0"
-          seamless="true"
-          height="50%"
-          width="65%"></iframe>
-  </body>
+	<head>
+		<style type="text/css">
+			* { padding: 0px; margin: 0px; }
+			body { color: white; background: black; font: xx-large Helvetica, serif; }
+			table { height: 100%; width: 100%; border-collapse: collapse; }
+			iframe { height: 100%; width: 100%; border: 0; overflow: hidden; }
+			
+			#outerTable tr { height: 50%; }
+			#outerTable td:nth-child(1) { width: 65%; }
+    	</style>
+	</head>
+	<body>
+  
+		<table id="outerTable">
+			<tr>
+				<td>
+					<table id="leftTable">
+						<tr>
+							<td>
+								<iframe src="//bamboo.hcom/currentActivity.action"
+									seamless="true"></iframe>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<iframe src="//bamboo.hcom/telemetry.action?filter=project&projectKey=IOS"
+									seamless="true"></iframe>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table id="rightTable">
+						<tr>
+							<td>
+								<iframe src="//bamboo.hcom/agent/viewAgents.action?planKey=IOS-DEV-JOB1"
+									seamless="false"></iframe>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<iframe src="//jira.hotels.com/issues/?filter=24074"
+									seamless="true"></iframe>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+
 </html>
