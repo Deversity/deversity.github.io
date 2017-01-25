@@ -1,9 +1,9 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:      rouge
 
 # Permalinks
-permalink:        pretty
+permalink:        /:year-:month-:day-:title/
 
 # Setup
 title:            Deversity
@@ -23,13 +23,3 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/Deversity/deversity.github.io
-
-
-
-
-
-# The below is required in order to support redirects (see the following URLs for details):
-#   https://help.github.com/articles/redirects-on-github-pages/
-#   https://help.github.com/articles/using-jekyll-plugins-with-github-pages/
-gems:
-  - jekyll-redirect-from
