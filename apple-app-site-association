@@ -5,15 +5,7 @@
             {
                 "appID": "2Q8W6PP93C.com.hotels.enterprisegeneric",
                 "paths": [
-                    "/PPCDeals",
-                    "/PPCDealsDestinations",
-                    "/PPCDealsNearMe",
-                    "/PPCHotelDetails",
-                    "/PPCNotificationsummary",
-                    "/PPCReservationDetails",
-                    "/PPCReservationList",
-                    "/PPCSearch"
-                    "/PPCWelcomeRewards"
+                    "*"
                 ]
             }
         ]
