@@ -1,13 +1,35 @@
 <html><body>
 
-<a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end"> Link A </a><br/><br/>
 
-<a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end"> Link B </a><br/><br/>
+<!-- 
+"Barcode Scanner" NOT installed
+	Chrome & Samsung Internet: went straight to "Barcode Scanner" page in Google Play Store
+	Firefox: prompted me which store to open URl with (Google Play Store / F-Droid / Galaxy Store)
+ 
+"Barcode Scanner" INSTALLED
+	Chrome & Samsung Internet: launches barcode scanner app (independently)
+	Firefox: launches barcode scanner app (but as an activity running under the Firefox context)
+-->
+<a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end">Intent Link A</a><br/><br/>
 
 
-<a href="googlechrome://www.google.com">Link C</a><br/><br/>
 
-<a href="googlechrome://www.google.com" target="_blank">Link D</a><br/><br/>
+<!-- 
+"Barcode Scanner" NOT installed
+	Chrome, Firefox & Samsung Internet: navigates to http://zxing.org
+ 
+"Barcode Scanner" INSTALLED
+	Chrome & Samsung Internet: launches barcode scanner app (independently)
+	Firefox: launches barcode scanner app (but as an activity running under the Firefox context)
+-->
+<a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end">Intent Link B</a><br/><br/>
+
+
+<a href="intent://stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome#Intent;scheme=http;package=com.android.chrome;end">Intent Link C</a><br/><br/>
+
+<a href="googlechrome://www.google.com">Custom URL Scheme A</a><br/><br/>
+
+<a href="googlechrome://www.google.com" target="_blank">Custom URL Scheme B</a><br/><br/>
 
 
 </body></html>
